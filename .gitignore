@@ -1,0 +1,15 @@
+# Node / Angular
+node_modules/
+dist/
+.angular/
+
+# .NET
+bin/
+obj/
+
+# IDEs
+.vs/
+.vscode/
+
+# Configuración sensible
+appsettings.Development.json

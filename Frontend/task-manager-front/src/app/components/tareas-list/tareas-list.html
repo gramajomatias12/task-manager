@@ -1,0 +1,19 @@
+<app-tarea-form
+  [tareaEditar]="tareaSeleccionada"
+  (guardado)="onGuardado()">
+</app-tarea-form>
+
+<mat-card *ngFor="let tarea of tareas">
+  <mat-card-title>{{ tarea.titulo }}</mat-card-title>
+  <mat-card-subtitle>{{ tarea.estado }}</mat-card-subtitle>
+
+  <mat-card-actions>
+    <button mat-icon-button color="primary" (click)="editar(tarea)">
+      <mat-icon>edit</mat-icon>
+    </button>
+
+    <button mat-icon-button color="warn" (click)="eliminar(tarea.id!)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
