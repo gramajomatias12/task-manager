@@ -1,15 +1,15 @@
-# Node / Angular
+# Backend
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# Frontend
 node_modules/
 dist/
 .angular/
 
-# .NET
-bin/
-obj/
+# Env
+.env
+.env.*
 
-# IDEs
-.vs/
-.vscode/
-
-# Configuración sensible
-appsettings.Development.json
